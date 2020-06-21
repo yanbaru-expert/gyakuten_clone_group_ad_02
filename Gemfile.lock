@@ -360,6 +360,7 @@ DEPENDENCIES
   rouge
   rspec-rails
   rubocop-rails_config
+  rubocop-require_tools (~> 0.1.2)
   rubocop-rspec
   sass-rails (>= 6)
   spring
