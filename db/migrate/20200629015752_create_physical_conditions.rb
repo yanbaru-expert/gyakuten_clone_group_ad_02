@@ -1,7 +1,7 @@
 class CreatePhysicalConditions < ActiveRecord::Migration[6.0]
   def change
     create_table :physical_conditions do |t|
-      t.references :user, null: false, foreign_key: true
+      t.references :user, null: false, foreign_key: true, index: false
       t.date :date
       t.float :temperature
       t.float :weight
@@ -10,5 +10,7 @@ class CreatePhysicalConditions < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+
+    add_index :physical_conditions, [:user_id, :date], unique: true
   end
 end
