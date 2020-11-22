@@ -22,6 +22,12 @@ gem 'rouge'
 gem 'annotate'
 gem 'kaminari'
 gem 'rails-i18n'
+gem 'devise-i18n'
+gem 'bootstrap', '~> 4.4.1'
+gem 'jquery-rails'
+gem 'devise-bootstrap-views', '~> 1.0'
+gem 'chart-js-rails'
+gem 'flatpickr'
 
 
 group :development, :test do
